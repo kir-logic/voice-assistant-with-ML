@@ -2,11 +2,13 @@
 Голосовой ассистент "Соната" - помощник в управлении Яндекс.Музыкой
 
 Требуется:
+Требуется: скачать языковую модель vosk (а именно, vosk-model-small-ru-0.22) 
+с сайта https://alphacephei.com/vosk/models и распаковать в папку с ассистентом
+
 pip install vosk
 pip install sounddevice
 pip install scikit-learn
 pip install pyttsx3
-Языковая модель vosk (уже есть в проекте)
 '''
 
 from sklearn.feature_extraction.text import CountVectorizer
@@ -76,4 +78,5 @@ def main():
 
 if __name__ == '__main__':
     main()
+
 
